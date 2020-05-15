@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.0.0.min.js" integrity="sha384-5Y+xuMRAbgBj/2WKUiL8yzV4fBFic1HJPo2hT3pq2IsEzbsJjj8kT2i0b1lZ7C2N" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="4d8ffc8a-1fbe-4076-be89-ab140215c972" data-root-id="10167"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="10580">
+          {"178e9519-c868-4c35-96ac-7cfc5bde592c":{"roots":{"references":[{"attributes":{"below":[{"id":"10177"}],"center":[{"id":"10179"},{"id":"10183"}],"left":[{"id":"10180"}],"plot_height":450,"plot_width":900,"renderers":[{"id":"10201"},{"id":"10207"}],"right":[{"id":"10209"}],"title":{"id":"10168"},"toolbar":{"id":"10190"},"x_range":{"id":"10166"},"x_scale":{"id":"10173"},"y_range":{"id":"10171"},"y_scale":{"id":"10175"}},"id":"10167","subtype":"Figure","type":"Plot"},{"attributes":{"axis":{"id":"10180"},"dimension":1,"ticker":null},"id":"10183","type":"Grid"},{"attributes":{},"id":"10434","type":"Selection"},{"attributes":{"fill_alpha":{"value":0.6},"fill_color":{"value":"#aec7e8"},"line_alpha":{"value":0.6},"line_color":{"value":"#aec7e8"},"top":{"field":"COVID_CASE_COUNT"},"width":{"value":0.4},"x":{"field":"BOROUGH_GROUP"}},"id":"10200","type":"VBar"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"10433","type":"BoxAnnotation"},{"attributes":{"data_source":{"id":"10165"},"glyph":{"id":"10204"},"hover_glyph":null,"muted":true,"muted_glyph":{"id":"10206"},"nonselection_glyph":{"id":"10205"},"selection_glyph":null,"view":{"id":"10208"}},"id":"10207","type":"GlyphRenderer"},{"attributes":{"axis":{"id":"10177"},"ticker":null},"id":"10179","type":"Grid"},{"attributes":{},"id":"10435","type":"UnionRenderers"},{"attributes":{"end":65000},"id":"10171","type":"Range1d"},{"attributes":{},"id":"10432","type":"BasicTickFormatter"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#ff7f0e"},"line_alpha":{"value":0.1},"line_color":{"value":"#ff7f0e"},"top":{"field":"COVID_CASE_RATE"},"width":{"value":0.4},"x":{"field":"BOROUGH_GROUP"}},"id":"10205","type":"VBar"},{"attributes":{"data_source":{"id":"10165"},"glyph":{"id":"10198"},"hover_glyph":null,"muted":true,"muted_glyph":{"id":"10200"},"nonselection_glyph":{"id":"10199"},"selection_glyph":null,"view":{"id":"10202"}},"id":"10201","type":"GlyphRenderer"},{"attributes":{},"id":"10175","type":"LinearScale"},{"attributes":{},"id":"10185","type":"WheelZoomTool"},{"attributes":{},"id":"10173","type":"CategoricalScale"},{"attributes":{},"id":"10184","type":"PanTool"},{"attributes":{},"id":"10187","type":"SaveTool"},{"attributes":{"source":{"id":"10165"}},"id":"10208","type":"CDSView"},{"attributes":{},"id":"10181","type":"BasicTicker"},{"attributes":{"overlay":{"id":"10433"}},"id":"10186","type":"BoxZoomTool"},{"attributes":{},"id":"10188","type":"ResetTool"},{"attributes":{},"id":"10189","type":"HelpTool"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"10184"},{"id":"10185"},{"id":"10186"},{"id":"10187"},{"id":"10188"},{"id":"10189"}]},"id":"10190","type":"Toolbar"},{"attributes":{"fill_alpha":{"value":0.6},"fill_color":{"value":"#aec7e8"},"line_color":{"value":"#aec7e8"},"top":{"field":"COVID_CASE_COUNT"},"width":{"value":0.4},"x":{"field":"BOROUGH_GROUP"}},"id":"10198","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.6},"fill_color":{"value":"#ff7f0e"},"line_alpha":{"value":0.6},"line_color":{"value":"#ff7f0e"},"top":{"field":"COVID_CASE_RATE"},"width":{"value":0.4},"x":{"field":"BOROUGH_GROUP"}},"id":"10206","type":"VBar"},{"attributes":{"axis_label":"Counts &amp; Rates","formatter":{"id":"10432"},"ticker":{"id":"10181"}},"id":"10180","type":"LinearAxis"},{"attributes":{},"id":"10430","type":"CategoricalTickFormatter"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#aec7e8"},"line_alpha":{"value":0.1},"line_color":{"value":"#aec7e8"},"top":{"field":"COVID_CASE_COUNT"},"width":{"value":0.4},"x":{"field":"BOROUGH_GROUP"}},"id":"10199","type":"VBar"},{"attributes":{"factors":["The Bronx","Brooklyn","Manhattan","Queens","Staten Island"]},"id":"10166","type":"FactorRange"},{"attributes":{"axis_label":"Borough","formatter":{"id":"10430"},"ticker":{"id":"10178"}},"id":"10177","type":"CategoricalAxis"},{"attributes":{"data":{"BOROUGH_GROUP":["The Bronx","Brooklyn","Manhattan","Queens","Staten Island"],"COVID_CASE_COUNT":[41628,49865,22646,56719,12714],"COVID_CASE_RATE":{"__ndarray__":"ZmZmZuah20DNzMzMrPTRQMzMzMwMjcdAmpmZmZkt1kCZmZmZ2bLYQA==","dtype":"float64","shape":[5]},"index":[0,1,2,3,4]},"selected":{"id":"10434"},"selection_policy":{"id":"10435"}},"id":"10165","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.6},"fill_color":{"value":"#ff7f0e"},"line_color":{"value":"#ff7f0e"},"top":{"field":"COVID_CASE_RATE"},"width":{"value":0.4},"x":{"field":"BOROUGH_GROUP"}},"id":"10204","type":"VBar"},{"attributes":{"label":{"value":"COVID_CASE_RATE"},"renderers":[{"id":"10207"}]},"id":"10211","type":"LegendItem"},{"attributes":{"click_policy":"hide","items":[{"id":"10210"},{"id":"10211"}],"label_text_font_size":"9pt","location":[0,-20]},"id":"10209","type":"Legend"},{"attributes":{"label":{"value":"COVID_CASE_COUNT"},"renderers":[{"id":"10201"}]},"id":"10210","type":"LegendItem"},{"attributes":{},"id":"10178","type":"CategoricalTicker"},{"attributes":{"source":{"id":"10165"}},"id":"10202","type":"CDSView"},{"attributes":{"text":"Borough Statistics"},"id":"10168","type":"Title"}],"root_ids":["10167"]},"title":"Bokeh Application","version":"2.0.0"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('10580').textContent;
+                  var render_items = [{"docid":"178e9519-c868-4c35-96ac-7cfc5bde592c","root_ids":["10167"],"roots":{"10167":"4d8ffc8a-1fbe-4076-be89-ab140215c972"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

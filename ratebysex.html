@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.0.0.min.js" integrity="sha384-5Y+xuMRAbgBj/2WKUiL8yzV4fBFic1HJPo2hT3pq2IsEzbsJjj8kT2i0b1lZ7C2N" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="3f56b1c6-d4be-45f9-b6e2-917ac99d7207" data-root-id="9744"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="10156">
+          {"a79fa00f-e31f-45b7-a2f0-2eb7257501ba":{"roots":{"references":[{"attributes":{"below":[{"id":"9754"}],"center":[{"id":"9756"},{"id":"9760"}],"left":[{"id":"9757"}],"plot_height":450,"plot_width":950,"renderers":[{"id":"9778"},{"id":"9784"},{"id":"9790"}],"right":[{"id":"9792"}],"title":{"id":"9745"},"toolbar":{"id":"9767"},"x_range":{"id":"9743"},"x_scale":{"id":"9750"},"y_range":{"id":"9748"},"y_scale":{"id":"9752"}},"id":"9744","subtype":"Figure","type":"Plot"},{"attributes":{"axis":{"id":"9757"},"dimension":1,"ticker":null},"id":"9760","type":"Grid"},{"attributes":{},"id":"9758","type":"BasicTicker"},{"attributes":{},"id":"10008","type":"BasicTickFormatter"},{"attributes":{"data":{"COVID_CASE_RATE":{"__ndarray__":"9ihcj8Kln0CPwvUo3GyiQMP1KFyPFaFA","dtype":"float64","shape":[3]},"DEATH_RATE":{"__ndarray__":"XI/C9SiUYEC4HoXrUSBsQEjhehSuN2ZA","dtype":"float64","shape":[3]},"HOSPITALIZED_CASE_RATE":{"__ndarray__":"UrgeheuZfUCuR+F6FK6FQI/C9ShcH4JA","dtype":"float64","shape":[3]},"SEX_GROUP":["Female","Male","Citywide total"],"index":[0,1,2]},"selected":{"id":"10010"},"selection_policy":{"id":"10011"}},"id":"9742","type":"ColumnDataSource"},{"attributes":{},"id":"9750","type":"CategoricalScale"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"10009","type":"BoxAnnotation"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#d7191c"},"line_alpha":{"value":0.1},"line_color":{"value":"#d7191c"},"top":{"field":"DEATH_RATE"},"width":{"value":0.4},"x":{"field":"SEX_GROUP"}},"id":"9788","type":"VBar"},{"attributes":{"overlay":{"id":"10009"}},"id":"9763","type":"BoxZoomTool"},{"attributes":{"data_source":{"id":"9742"},"glyph":{"id":"9787"},"hover_glyph":null,"muted":true,"muted_glyph":{"id":"9789"},"nonselection_glyph":{"id":"9788"},"selection_glyph":null,"view":{"id":"9791"}},"id":"9790","type":"GlyphRenderer"},{"attributes":{"text":"Rates by Sex "},"id":"9745","type":"Title"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"9761"},{"id":"9762"},{"id":"9763"},{"id":"9764"},{"id":"9765"},{"id":"9766"}]},"id":"9767","type":"Toolbar"},{"attributes":{"source":{"id":"9742"}},"id":"9791","type":"CDSView"},{"attributes":{},"id":"9762","type":"WheelZoomTool"},{"attributes":{"axis_label":"Sex","formatter":{"id":"10006"},"ticker":{"id":"9755"}},"id":"9754","type":"CategoricalAxis"},{"attributes":{"fill_alpha":{"value":0.6},"fill_color":{"value":"#d7191c"},"line_color":{"value":"#d7191c"},"top":{"field":"DEATH_RATE"},"width":{"value":0.4},"x":{"field":"SEX_GROUP"}},"id":"9787","type":"VBar"},{"attributes":{},"id":"9761","type":"PanTool"},{"attributes":{"label":{"value":"COVID_CASE_RATE"},"renderers":[{"id":"9778"}]},"id":"9793","type":"LegendItem"},{"attributes":{},"id":"9765","type":"ResetTool"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"value":"#d7191c"},"line_alpha":{"value":0.5},"line_color":{"value":"#d7191c"},"top":{"field":"DEATH_RATE"},"width":{"value":0.4},"x":{"field":"SEX_GROUP"}},"id":"9789","type":"VBar"},{"attributes":{},"id":"9764","type":"SaveTool"},{"attributes":{},"id":"10006","type":"CategoricalTickFormatter"},{"attributes":{},"id":"10010","type":"Selection"},{"attributes":{"data_source":{"id":"9742"},"glyph":{"id":"9775"},"hover_glyph":null,"muted":true,"muted_glyph":{"id":"9777"},"nonselection_glyph":{"id":"9776"},"selection_glyph":null,"view":{"id":"9779"}},"id":"9778","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.6},"fill_color":{"value":"#fdae61"},"line_color":{"value":"#fdae61"},"top":{"field":"HOSPITALIZED_CASE_RATE"},"width":{"value":0.4},"x":{"field":"SEX_GROUP"}},"id":"9781","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#abdda4"},"line_alpha":{"value":0.1},"line_color":{"value":"#abdda4"},"top":{"field":"COVID_CASE_RATE"},"width":{"value":0.4},"x":{"field":"SEX_GROUP"}},"id":"9776","type":"VBar"},{"attributes":{"end":4100},"id":"9748","type":"Range1d"},{"attributes":{},"id":"9766","type":"HelpTool"},{"attributes":{"label":{"value":"DEATH_RATE"},"renderers":[{"id":"9790"}]},"id":"9795","type":"LegendItem"},{"attributes":{"factors":["Female","Male","Citywide total"]},"id":"9743","type":"FactorRange"},{"attributes":{"source":{"id":"9742"}},"id":"9779","type":"CDSView"},{"attributes":{},"id":"9755","type":"CategoricalTicker"},{"attributes":{"label":{"value":"HOSPITALIZED_CASE_RATE"},"renderers":[{"id":"9784"}]},"id":"9794","type":"LegendItem"},{"attributes":{"fill_alpha":{"value":0.6},"fill_color":{"value":"#abdda4"},"line_color":{"value":"#abdda4"},"top":{"field":"COVID_CASE_RATE"},"width":{"value":0.4},"x":{"field":"SEX_GROUP"}},"id":"9775","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"value":"#abdda4"},"line_alpha":{"value":0.5},"line_color":{"value":"#abdda4"},"top":{"field":"COVID_CASE_RATE"},"width":{"value":0.4},"x":{"field":"SEX_GROUP"}},"id":"9777","type":"VBar"},{"attributes":{},"id":"10011","type":"UnionRenderers"},{"attributes":{"source":{"id":"9742"}},"id":"9785","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"value":"#fdae61"},"line_alpha":{"value":0.5},"line_color":{"value":"#fdae61"},"top":{"field":"HOSPITALIZED_CASE_RATE"},"width":{"value":0.4},"x":{"field":"SEX_GROUP"}},"id":"9783","type":"VBar"},{"attributes":{"axis_label":"Rate per 100,000 people","formatter":{"id":"10008"},"ticker":{"id":"9758"}},"id":"9757","type":"LinearAxis"},{"attributes":{"data_source":{"id":"9742"},"glyph":{"id":"9781"},"hover_glyph":null,"muted":true,"muted_glyph":{"id":"9783"},"nonselection_glyph":{"id":"9782"},"selection_glyph":null,"view":{"id":"9785"}},"id":"9784","type":"GlyphRenderer"},{"attributes":{"click_policy":"hide","items":[{"id":"9793"},{"id":"9794"},{"id":"9795"}],"label_text_font_size":"8pt","location":[0,-20]},"id":"9792","type":"Legend"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#fdae61"},"line_alpha":{"value":0.1},"line_color":{"value":"#fdae61"},"top":{"field":"HOSPITALIZED_CASE_RATE"},"width":{"value":0.4},"x":{"field":"SEX_GROUP"}},"id":"9782","type":"VBar"},{"attributes":{"axis":{"id":"9754"},"ticker":null},"id":"9756","type":"Grid"},{"attributes":{},"id":"9752","type":"LinearScale"}],"root_ids":["9744"]},"title":"Bokeh Application","version":"2.0.0"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('10156').textContent;
+                  var render_items = [{"docid":"a79fa00f-e31f-45b7-a2f0-2eb7257501ba","root_ids":["9744"],"roots":{"9744":"3f56b1c6-d4be-45f9-b6e2-917ac99d7207"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
